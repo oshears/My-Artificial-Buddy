@@ -4,15 +4,19 @@ import time
 import mabFaces
 import mabConverse
 
-
-def loginput(userInput):
+def returnTime():
 	fatherTime = ""
 	fatherTime = time.strftime("%b:%d:%H:%M:%S")
 	fatherTime = fatherTime.split(":")
+	return fatherTime
+
+def loginput(userInput):
+	fatherTime=returnTime
 
 	fileRef=open("./logfiles/%s_%s.txt"%(fatherTime[0],fatherTime[1]),"a")
 	fileRef.write("%s:%s:%s  "%(fatherTime[2],fatherTime[3],fatherTime[4])+userInput+"\n")
 	fileRef.close()
+
 
 
 def getName():
@@ -28,17 +32,23 @@ def getName():
 
 
 def getMood():
+	fatherTime=returnTime()
+	
+	if (fatherTime[2]<12):
+		system("say I am having a great morning!")
+	elif(fatherTime[2]<18):
+		system("say I am having a great afternoon!")
+	elif(fatherTime[2]<21):
+		system("say I am having a great evening!")
+	else:
+		system("say I am having a great night!")
 
-	system("say I am having a great day today!")
-
+	return
 
 def getTime():
-	fatherTime = ""
-	fatherTime = time.strftime("%H:%M:%S")
-	fatherTime = fatherTime.split(":")
-	fatherTime = [int(fatherTime[0]),int(fatherTime[1]),int(fatherTime[2])]
-	print("Time: %s:%s"%(fatherTime[0],fatherTime[1]))
-	system("say Current time is %s %s"%(fatherTime[0],fatherTime[1]))
+	fatherTime=returnTime()
+	print("Time: %s:%s"%(fatherTime[2],fatherTime[3]))
+	system("say Current time is %s %s"%(fatherTime[2],fatherTime[3]))
 	return
 
 
@@ -49,7 +59,7 @@ def respondInput(userInput):
 	elif (userInput=="Impress my friends"):
 		system("say watch the train go by... choo choo & sl")
 		return True
-	elif (userInput=="Goodbye" or userInput=="Quit" or userInput=="Bye"):
+	elif (userInput=="Goodbye" or userInput=="Quit" or userInput=="Bye" or userInput=="See ya"):
 		system("say See you soon!")
 		return False
 	elif (userInput=="What is my current location?"):
@@ -69,6 +79,14 @@ def respondInput(userInput):
 	elif (userInput=="Lets talk"):
 		mabConverse.converse()
 		return True
+	elif (userInput=="Clear"):
+		system("clear & say Done!")
+		return True
+	elif(userInput[0:4]=="say "):
+		try:
+			system("say %s"%(userInput[5:]))
+		except:
+			system("say ...")
 	else:
 		system("say I did not recognize your input.")
 		return True

@@ -6,3 +6,15 @@
 13:03:19  Lets talk
 13:03:41  what is the weather
 13:03:55  what is my current location
+13:47:58  "does this work"
+13:50:09  "no sir it does not"
+13:51:06  Lets talk
+13:54:15  quit
+13:58:58  clear
+14:00:49  quit
+14:03:12  clear
+14:03:15  testing
+14:03:18  display face
+14:03:23  say test
+14:03:33  what time is it
+14:03:48  quit

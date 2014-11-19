@@ -1,4 +1,4 @@
-import "program_files"/mabFunctions
+import mabFunctions
 
 ##Run the program
 mabFunctions.main()
