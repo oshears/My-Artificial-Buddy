@@ -54,3 +54,39 @@
 14:21:03  say more yam
 14:21:06  say mariam
 14:21:13  quit
+16:24:55  show face standardFace
+16:25:31  show face
+16:25:45  show face greetFace
+16:25:58  quit
+16:26:09  show face greetface
+16:26:14  show face greetFace
+16:26:48  quit()
+16:26:51  quit
+16:27:15  Show face greetFace
+16:27:29  quit
+16:27:36  show face greetFace
+16:27:57  show face inquisitiveFace
+16:28:13  show face inquisitiveFace
+16:28:35  show face greetFace
+16:28:42  quit
+16:28:57  show face greetFace
+16:29:26  quit
+16:29:36  show show face greetface
+16:29:43  show face greetFace
+16:29:54  show face greetFace
+16:30:05  show face inquisitiveface
+16:30:16  show face standardface
+16:30:58  quit
+16:33:09  open .
+16:33:21  open ./
+16:33:30  quit
+16:33:36  open .
+16:34:23  quit
+16:34:29  open .
+16:34:39  quit
+16:34:50  open .
+16:35:18  quit
+16:35:26  open ./logfiles
+16:35:34  open ./logfiles
+16:38:11  open .
+17:09:18  quit
