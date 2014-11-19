@@ -11,7 +11,7 @@ def returnTime():
 	return fatherTime
 
 def loginput(userInput):
-	fatherTime=returnTime
+	fatherTime=returnTime()
 
 	fileRef=open("./logfiles/%s_%s.txt"%(fatherTime[0],fatherTime[1]),"a")
 	fileRef.write("%s:%s:%s  "%(fatherTime[2],fatherTime[3],fatherTime[4])+userInput+"\n")
@@ -34,11 +34,11 @@ def getName():
 def getMood():
 	fatherTime=returnTime()
 	
-	if (fatherTime[2]<12):
+	if (int(fatherTime[2])<12):
 		system("say I am having a great morning!")
-	elif(fatherTime[2]<18):
+	elif(int(fatherTime[2])<18):
 		system("say I am having a great afternoon!")
-	elif(fatherTime[2]<21):
+	elif(int(fatherTime[2])<21):
 		system("say I am having a great evening!")
 	else:
 		system("say I am having a great night!")
@@ -53,7 +53,10 @@ def getTime():
 
 
 def respondInput(userInput):
-	if (userInput=="How is your day?"):
+
+	print (userInput)
+	if (userInput=="How is your day?" or userInput=="How was your day?" 
+		or userInput=="How are you?" or userInput=="How are you"):
 		getMood()
 		return True
 	elif (userInput=="Impress my friends"):
@@ -82,11 +85,12 @@ def respondInput(userInput):
 	elif (userInput=="Clear"):
 		system("clear & say Done!")
 		return True
-	elif(userInput[0:4]=="say "):
+	elif(userInput[0:4]=="Say "):
 		try:
-			system("say %s"%(userInput[5:]))
+			system("say %s"%(userInput[4:]))
 		except:
 			system("say ...")
+		return True
 	else:
 		system("say I did not recognize your input.")
 		return True
