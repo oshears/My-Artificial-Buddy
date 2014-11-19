@@ -1,13 +1,24 @@
 from os import system
 from random import randrange
-from multiprocessing import Process
 import time
+import mabFaces
+import mabConverse
+
+def loginput(userInput):
+	fatherTime = ""
+	fatherTime = time.strftime("%b:%d:%H:%M:%S")
+	fatherTime = fatherTime.split(":")
+
+	fileRef=open("./logfiles/%s_%s.txt"%(fatherTime[0],fatherTime[1]),"a")
+	fileRef.write("%s:%s:%s  "%(fatherTime[2],fatherTime[3],fatherTime[4])+userInput+"\n")
+	fileRef.close()
 
 def getName():
 	try:
 		fileRef = open("mabInfo.txt")
 		fileLines = fileRef.readlines()
 		name = fileLines[0][:len(fileLines[0])]
+		fileLines.close()
 	except:
 		name = "Isaac"
 
@@ -19,15 +30,14 @@ def getMood():
 
 def getTime():
 	fatherTime = ""
-	fatherTime = time.strftime("%I:%M:%S")
+	fatherTime = time.strftime("%H:%M:%S")
 	fatherTime = fatherTime.split(":")
 	fatherTime = [int(fatherTime[0]),int(fatherTime[1]),int(fatherTime[2])]
 	print("Time: %s:%s"%(fatherTime[0],fatherTime[1]))
 	system("say Current time is %s %s"%(fatherTime[0],fatherTime[1]))
-
+	return
 
 def respondInput(userInput):
-	
 	if (userInput=="How is your day?"):
 		getMood()
 		return True
@@ -48,8 +58,11 @@ def respondInput(userInput):
 	elif (userInput=="What is your name?"):
 		system("say My name is %s"%(getName()))
 		return True
-	elif (userInput=="What time is it?"):
+	elif (userInput=="What time is it?"or userInput=="What time is it"):
 		getTime()
+		return True
+	elif (userInput=="Lets talk"):
+		mabConverse.converse()
 		return True
 	else:
 		system("say I did not recognize your input.")
@@ -57,9 +70,12 @@ def respondInput(userInput):
 
 def randomGreet():
 
+	print(mabFaces.greetFace)
 	system("say Good day o sa zee")
 
 	choice = randrange(1,4) 
+
+	print(mabFaces.inquisitiveFace)
 
 	if choice == 1:
 		system("say Is there anything I can help you with?")
@@ -74,7 +90,9 @@ def collectInput():
 	userInput = ""
 	
 	userInput=str(input())
-		
+	
+	loginput(userInput)
+
 	userInput=userInput.capitalize()
 		
 	return respondInput(userInput)
@@ -89,6 +107,3 @@ def main ():
 	while (living):
 		living=collectInput()
 
-##Run the program
-
-main()
