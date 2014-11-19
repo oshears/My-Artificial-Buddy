@@ -90,3 +90,10 @@
 16:35:34  open ./logfiles
 16:38:11  open .
 17:09:18  quit
+18:45:03  yes
+18:45:27  okay
+18:45:31  what time is it
+18:45:37  where am i located
+18:45:40  what is my location
+18:45:46  where is my location
+18:46:11  goodbye

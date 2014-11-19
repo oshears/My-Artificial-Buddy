@@ -1,5 +1,7 @@
 import mabResponses
-
+import mabFaces
+from os import system
+from random import randrange
 
 def randomGreet():
 
@@ -25,11 +27,11 @@ def collectInput():
 	
 	userInput=str(input())
 	
-	loginput(userInput)
+	mabResponses.loginput(userInput)
 
 	userInput=userInput.capitalize()
 		
-	return respondInput(userInput)
+	return mabResponses.respondInput(userInput)
 		
 
 def main ():
