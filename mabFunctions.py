@@ -4,6 +4,7 @@ import time
 import mabFaces
 import mabConverse
 
+
 def loginput(userInput):
 	fatherTime = ""
 	fatherTime = time.strftime("%b:%d:%H:%M:%S")
@@ -13,9 +14,10 @@ def loginput(userInput):
 	fileRef.write("%s:%s:%s  "%(fatherTime[2],fatherTime[3],fatherTime[4])+userInput+"\n")
 	fileRef.close()
 
+
 def getName():
 	try:
-		fileRef = open("mabInfo.txt")
+		fileRef = open("./config/mabInfo.txt")
 		fileLines = fileRef.readlines()
 		name = fileLines[0][:len(fileLines[0])]
 		fileLines.close()
@@ -24,9 +26,11 @@ def getName():
 
 	return name
 
+
 def getMood():
 
 	system("say I am having a great day today!")
+
 
 def getTime():
 	fatherTime = ""
@@ -36,6 +40,7 @@ def getTime():
 	print("Time: %s:%s"%(fatherTime[0],fatherTime[1]))
 	system("say Current time is %s %s"%(fatherTime[0],fatherTime[1]))
 	return
+
 
 def respondInput(userInput):
 	if (userInput=="How is your day?"):
@@ -68,6 +73,7 @@ def respondInput(userInput):
 		system("say I did not recognize your input.")
 		return True
 
+
 def randomGreet():
 
 	print(mabFaces.greetFace)
@@ -84,6 +90,7 @@ def randomGreet():
 	elif choice == 3:
 		system("say How may I be of service?")
 	return
+
 
 def collectInput():
 	
