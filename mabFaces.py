@@ -69,16 +69,16 @@ aperatureFaceArray =[
 
 def getFace(face):
 	print(face)
-	if (face=="greetface"):
+	if (face=="greet face"):
 		return greetFace
 	
-	if (face=="inquisitiveface"):
+	if (face=="inquisitive face"):
 		return inquisitiveFace
 
-	if (face=="standardface"):
+	if (face=="standard face"):
 		return standardFace
 
-	if (face=="aperatureface"):
+	if (face=="aperature face"):
 		return aperatureFace
 
 	return standardFace

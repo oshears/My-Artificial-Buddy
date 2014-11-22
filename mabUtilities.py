@@ -40,3 +40,8 @@ def logInput(userInput):
 	fileRef=open("./logfiles/%s_%s.txt"%(fatherTime[0],fatherTime[1]),"a")
 	fileRef.write("%s:%s:%s  "%(fatherTime[2],fatherTime[3],fatherTime[4])+userInput+"\n")
 	fileRef.close()
+
+def getTemp():
+	system("./config/weatherscript.sh > ./temp/weather.txt & ./config/weatherscript.sh")
+	system("say -f ./temp/weather.txt")
+	system("rm ./temp/weather.txt")

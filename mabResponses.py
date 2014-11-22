@@ -53,9 +53,8 @@ def respondInput(userInput,areSilent):
 	elif (userInput=="What is my current location"):
 		system("say I am not yet able to determine your location"+
 		 "However, that feature will be coming soon")
-	elif (userInput=="What is the weather"):
-		system("say I am not yet able to determine the weather"+
-			"However, that feature will be coming soon")
+	elif (userInput=="What is the temperature"):
+		mabUtilities.getTemp()
 	elif (userInput=="What is your name"):
 		system("say My name is %s"%(mabUtilities.getName()))
 	elif (userInput=="What time is it"or userInput=="What time is it"):

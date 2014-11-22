@@ -355,3 +355,42 @@
 10:02:08  goodbye
 10:02:27  aperature
 10:02:34  goodbye
+11:01:46  what is the temperature
+11:01:53  what is the temperature
+11:02:00  what is the temperature
+11:02:06  the temperature
+11:02:11  goodbye
+11:03:39  what is the weather
+11:03:44  what is the temperature
+11:04:02  goodbye
+11:04:32  what is the temperature
+11:04:55  what is the temperature
+11:05:25  goodbye
+11:05:40  what is the temperature
+11:05:49  goodbye
+11:06:37  what is the temperature
+11:06:51  what is the temperature
+11:07:05  goodbye
+11:08:08  what is the temperature
+11:08:15  what is the temperature
+11:08:24  goodbye
+11:10:05  what is the weather
+11:10:10  what is the
+11:10:17  what is the temperature
+11:10:31  what is the temperature
+11:10:40  what is the temperature
+11:10:51  goodbye
+11:13:28  what is the weather
+11:13:35  what is the temperature
+11:13:47  what is the temperature
+11:13:56  goodbye
+11:14:53  what is the temperature
+11:15:01  what is the temperature
+11:15:11  what is the temperature
+11:15:36  what is the temperature
+11:15:46  what is the temperature
+11:16:01  ##--(system)error: did not understand response.--##
+11:16:18  say Fahrenheit
+11:16:39  what's the temperature outside
+11:16:45  what is the temperature
+11:16:54  goodbye
