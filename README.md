@@ -37,8 +37,8 @@ Planned Additions
 
 Requirements
 ------------
-PyAudio
-A FLAC encoder
-Python SpeechRecognition Library
-POSIX Python Module
-Internet Connection
+* PyAudio
+* A FLAC encoder
+* Python SpeechRecognition Library
+* POSIX Python Module
+* An Internet Connection
