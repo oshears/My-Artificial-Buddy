@@ -31,14 +31,16 @@ Current Features
 
 Controls
 --------
-Simply execute the program by navigating to the "My Artificial Buddy" directory and typing "python3 mabMain.py"
+Simply execute the program by navigating to the "My Artificial Buddy" directory and typing "python3 mabMain.py" The program will then start listening for user commands. These commands must be on the list of recognized commands, otherwise the program perform the default response.
 
 
 Planned Additions
 -----------------
 * More user commands
 * Offline support for voice recognition
- * This could possibly be done by using the [NSSpeechRecognizer](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Speech/Articles/RecognizeSpeech.html) library that comes built in with OSX 
+ * This could possibly be done by using the [NSSpeechRecognizer](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Speech/Articles/RecognizeSpeech.html) library that comes built in with OSX
+* Adjustable sensitivity threshold for collecting sound
+* More customability options
 
 
 Requirements
