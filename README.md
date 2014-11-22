@@ -37,6 +37,7 @@ Planned Additions
 * More user commands
 * Offline support for voice recognition
 
+
 Requirements
 ------------
 * PyAudio
@@ -44,3 +45,7 @@ Requirements
 * Python SpeechRecognition Library
 * POSIX Python Module
 * An Internet Connection
+
+Recommended Configuration
+-------------------------
+* Add the alias "mab.run" to your ".bash_profile" which executes "python3 mabMain.py"
