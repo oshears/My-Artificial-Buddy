@@ -36,9 +36,11 @@ def collectInput(isSilent):
 
 	try:
 		userInput = r.recognize(audio)
-
+	except KeyError:
+		userInput = "No internet"
 	except LookupError:
 		userInput = "##--(system)error: did not understand response.--##"
+
 
 	#userInput = ""
 	

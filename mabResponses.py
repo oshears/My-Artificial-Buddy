@@ -63,6 +63,8 @@ def respondInput(userInput,areSilent):
 		mabConverse.converse()
 	elif (userInput=="Clear"):
 		system("clear & say Done!")
+	elif (userInput=="Are you better than siri"):
+		system("say Yes, by a long shot")
 	elif(userInput[0:4]=="Say "):
 		try:
 			system("say \"%s\""%(userInput[4:]))
@@ -89,10 +91,12 @@ def respondInput(userInput,areSilent):
 			system("say I am having a hard time understanding you")
 	elif (userInput=="Run updated version"):
 		try:
-			system("osascript -e 'tell application \"Terminal\" to activate' -e 'tell application \"System Events\" to tell process \"Terminal\" to keystroke \"t\" using command down' -e 'tell application \"Terminal\" to do script \"python3 mabMain.py\" in selected tab of the front window'")
+			system("osascript -e 'tell application \"Terminal\" to activate' -e 'tell application \"System Events\" to tell process \"Terminal\" to keystroke \"t\" using command down' -e 'tell application \"Terminal\" to do script \"mab.run\" in selected tab of the front window'")
 		except:
 			system("say I am unable to do this right now.")
 		return False
+	elif(userInput=="No internet"):
+		system("say I am unable to connect to the internet right now...")
 	else:
 		if not areSilent:
 			system("say Ummm, come again?")
