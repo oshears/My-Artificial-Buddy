@@ -49,4 +49,4 @@ Requirements
 Recommended Configuration
 -------------------------
 * Add the alias "mab.run" to your ".bash_profile" which executes "python3 mabMain.py"
- *This allows the "Run updated version" command to execute properly
+ * This allows the "Run updated version" command to execute properly
