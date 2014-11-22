@@ -394,3 +394,40 @@
 11:16:39  what's the temperature outside
 11:16:45  what is the temperature
 11:16:54  goodbye
+11:18:51  what is the temperature
+11:18:59  goodbye
+11:19:38  ##--(system)error: did not understand response.--##
+11:19:48  say see you later
+11:19:55  say the door is that way
+11:20:03  goodbye
+11:20:38  clear
+11:20:45  ##--(system)error: did not understand response.--##
+11:20:55  show face standard face
+11:21:04  show face inquisitive face
+11:21:15  ##--(system)error: did not understand response.--##
+11:21:24  ##--(system)error: did not understand response.--##
+11:21:34  show face greasy face
+11:21:43  show face greet face
+11:21:50  show face aperature face
+11:21:58  stop listening
+11:22:15  what is the temperature
+11:23:32  goodbye
+11:27:18  shoe face aperature face
+11:27:25  show face inquisitive face
+11:27:30  show face
+11:27:39  ##--(system)error: did not understand response.--##
+11:27:49  shoe base a preacher face
+11:27:58  show face aperature face
+11:28:05  ##--(system)error: did not understand response.--##
+11:28:15  show face greet faith
+11:28:24  ##--(system)error: did not understand response.--##
+11:28:35  show face inquisitive face
+11:28:49  run updated version
+11:28:59  goodbye
+11:29:04  goodbye
+11:30:22  run updated version
+11:30:30  goodbye
+11:30:33  ##--(system)error: did not understand response.--##
+11:30:40  goodbye
+11:32:25  run updated version
+11:32:39  goodbye

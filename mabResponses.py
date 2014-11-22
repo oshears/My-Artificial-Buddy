@@ -69,7 +69,7 @@ def respondInput(userInput,areSilent):
 		except:
 			system("say ...")
 	elif(userInput[:9]=="Show face"):
-		print("\n"+mabFaces.getFace(userInput[10:]))
+		print("\n"+mabUtilities.bcolors.PURPLE+mabFaces.getFace(userInput[10:]+mabUtilities.bcolors.NOCL))
 	elif(userInput[:4]=="Open"):
 		system("open%s & say opening"%(userInput[4:]))
 	elif (userInput=="Aperature"):
@@ -87,6 +87,12 @@ def respondInput(userInput,areSilent):
 	elif (userInput=="##--(system)error: did not understand response.--##"):
 		if not areSilent:
 			system("say I am having a hard time understanding you")
+	elif (userInput=="Run updated version"):
+		try:
+			system("osascript -e 'tell application \"Terminal\" to activate' -e 'tell application \"System Events\" to tell process \"Terminal\" to keystroke \"t\" using command down' -e 'tell application \"Terminal\" to do script \"python3 mabMain.py\" in selected tab of the front window'")
+		except:
+			system("say I am unable to do this right now.")
+		return False
 	else:
 		if not areSilent:
 			system("say Ummm, come again?")

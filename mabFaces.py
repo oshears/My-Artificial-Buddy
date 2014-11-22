@@ -68,7 +68,6 @@ aperatureFaceArray =[
 "               =++%%%%+/:-."]
 
 def getFace(face):
-	print(face)
 	if (face=="greet face"):
 		return greetFace
 	
