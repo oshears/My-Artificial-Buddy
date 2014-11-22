@@ -3,6 +3,7 @@ from random import randrange
 import time
 import mabFaces
 import mabConverse
+import speech_recognition as sr
 
 def returnTime():
 	fatherTime = ""
@@ -17,7 +18,26 @@ def loginput(userInput):
 	fileRef.write("%s:%s:%s  "%(fatherTime[2],fatherTime[3],fatherTime[4])+userInput+"\n")
 	fileRef.close()
 
+def dormant():
+	system("say I will stop listening to you for now")
+	ignoring=True
 
+	r = sr.Recognizer()
+
+	while ignoring:
+		ignoreR = sr.Recognizer()
+		with sr.Microphone() as source:
+			ignoreAudio = ignoreR.listen(source)
+
+		try:
+			ignoreInput = ignoreR.recognize(ignoreAudio)
+
+		except LookupError:
+			ignoreInput = None
+		
+		if ignoreInput == "start listening":
+			ignoring = False
+			system("say I am listening to you")
 
 def getName():
 	try:
@@ -33,8 +53,10 @@ def getName():
 
 def getMood():
 	fatherTime=returnTime()
-	
-	if (int(fatherTime[2])<12):
+
+	if (int(fatherTime[2])<3):
+		system("say I am having a great night!")
+	elif (int(fatherTime[2])<12):
 		system("say I am having a great morning!")
 	elif(int(fatherTime[2])<18):
 		system("say I am having a great afternoon!")
@@ -53,48 +75,45 @@ def getTime():
 
 
 def respondInput(userInput):
-	if (userInput=="How is your day?" or userInput=="How was your day?" 
-		or userInput=="How are you?" or userInput=="How are you"):
+	if (userInput=="How is your day" or userInput=="How was your day" or userInput=="How are you"):
 		getMood()
-		return True
 	elif (userInput=="Impress my friends"):
 		system("say watch the train go by... choo choo & sl")
-		return True
 	elif (userInput=="Goodbye" or userInput=="Quit" or userInput=="Bye" or userInput=="See ya"):
 		system("say See you soon!")
 		return False
-	elif (userInput=="What is my current location?"):
+	elif (userInput=="What is my current location"):
 		system("say I am not yet able to determine your location"+
 		 "However, that feature will be coming soon")
-		return True
-	elif (userInput=="What is the weather?"):
+	elif (userInput=="What is the weather"):
 		system("say I am not yet able to determine the weather"+
 			"However, that feature will be coming soon")
-		return True
-	elif (userInput=="What is your name?"):
+	elif (userInput=="What is your name"):
 		system("say My name is %s"%(getName()))
-		return True
-	elif (userInput=="What time is it?"or userInput=="What time is it"):
+	elif (userInput=="What time is it"or userInput=="What time is it"):
 		getTime()
-		return True
-	elif (userInput=="Lets talk"):
+	elif (userInput=="Let's talk"):
 		mabConverse.converse()
-		return True
 	elif (userInput=="Clear"):
 		system("clear & say Done!")
-		return True
 	elif(userInput[0:4]=="Say "):
 		try:
 			system("say %s"%(userInput[4:]))
 		except:
 			system("say ...")
-		return True
 	elif(userInput[:9]=="Show face"):
 		print("\n"+mabFaces.getFace(userInput[10:]))
-		return True
 	elif(userInput[:4]=="Open"):
 		system("open%s & say opening"%(userInput[4:]))
-		return True
+	elif (userInput=="Aperature"):
+		for line in mabFaces.aperatureFaceArray:
+			print(line)
+		system("say The cake is a lie!")
+	elif (userInput=="Stop listening"):
+		dormant()
+	elif (userInput=="Respond silently"):
+		system("I will listen, but only respond if I know what you said")
 	else:
-		system("say I did not recognize your input.")
-		return True
+		system("say Come again?")
+		
+	return True

@@ -43,6 +43,30 @@ standardFace = "000000000000000000\n00       00      0\n000000000000000000\n0000
 "000000000000000000\n"
 '''
 
+aperatureFace = '             .,-:;//;:=,\n          . :H@@@MM@M#H/.,+%;,\n       ,/X+ +M@@M@MM%=,-%HMMM@X/,\n     -+@MM; $M@@MH+-,;XMMMM@MMMM@+-\n    ;@M@@M- XM@X;. -+XXXXXHHH@M@M#@/.\n  ,%MM@@MH ,@%=             .---=-=:=,.\n  =@#@@@MX.,                -%HX$$%%%:;\n =-./@M@M$                   .;@MMMM@MM:\n X@/ -$MM/                    . +MM@@@M$\n,@M@H: :@:                    . =X#@@@@-\n,@@@MMX, .                    /H- ;@M@M=\n.H@@@@M@+,                    %MM+..%#$.\n /MMMM@MMH/.                  XM@MH; =;\n  /%+%$XHH@$=              , .H@@@@MX,\n   .=--------.           -%H.,@@@@@MX,\n   .%MM@@@HHHXX$$$%+- .:$MMX =M@@MM%.\n     =XMMM@MM@MM#H;,-+HMM@M+ /MMMX=\n       =%@M@M#@$-.=$@MM@@@M; %M%=\n         ,:+$+-,/H#MMMMMMM@= =,\n               =++%%%%+/:-.'
+
+aperatureFaceArray =[
+"             .,-:;//;:=,",
+"          . :H@@@MM@M#H/.,+%;,",
+"       ,/X+ +M@@M@MM%=,-%HMMM@X/,",
+"     -+@MM; $M@@MH+-,;XMMMM@MMMM@+-",
+"    ;@M@@M- XM@X;. -+XXXXXHHH@M@M#@/.",
+"  ,%MM@@MH ,@%=             .---=-=:=,.",
+"  =@#@@@MX.,                -%HX$$%%%:;",
+" =-./@M@M$                   .;@MMMM@MM:",
+" X@/ -$MM/                    . +MM@@@M$",
+",@M@H: :@:                    . =X#@@@@-",
+",@@@MMX, .                    /H- ;@M@M=",
+".H@@@@M@+,                    %MM+..%#$.",
+" /MMMM@MMH/.                  XM@MH; =;",
+"  /%+%$XHH@$=              , .H@@@@MX,",
+"   .=--------.           -%H.,@@@@@MX,",
+"   .%MM@@@HHHXX$$$%+- .:$MMX =M@@MM%.",
+"     =XMMM@MM@MM#H;,-+HMM@M+ /MMMX=",
+"       =%@M@M#@$-.=$@MM@@@M; %M%=",
+"         ,:+$+-,/H#MMMMMMM@= =,",
+"               =++%%%%+/:-."]
+
 def getFace(face):
 	print(face)
 	if (face=="greetface"):
@@ -53,5 +77,8 @@ def getFace(face):
 
 	if (face=="standardface"):
 		return standardFace
+
+	if (face=="aperatureface"):
+		return aperatureFace
 
 	return standardFace

@@ -2,6 +2,7 @@ import mabResponses
 import mabFaces
 from os import system
 from random import randrange
+import speech_recognition as sr
 
 def randomGreet():
 
@@ -23,10 +24,20 @@ def randomGreet():
 
 def collectInput():
 	
-	userInput = ""
+	r = sr.Recognizer()
+	with sr.Microphone() as source:
+		audio = r.listen(source)
+
+	try:
+		userInput = r.recognize(audio)
+
+	except LookupError:
+		userInput = "Did not understand"
+
+	#userInput = ""
 	
-	userInput=str(input())
-	
+	#userInput=str(input())
+
 	mabResponses.loginput(userInput)
 
 	userInput=userInput.capitalize()
