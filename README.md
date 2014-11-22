@@ -25,7 +25,7 @@ The goal of this project is to create a robot with the ability to talk fluently 
 Current Features
 ----------------
 * Voice Recognition Ability
-* Several Basic Commands
+* Currently Supported Commands
   * "What time is it?"
   * "Show face [Face]" ["greet face", "standard face", "inquisitive face", "aperature face"]
   * "Say [Words]" [Any thing you want it to say]
