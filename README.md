@@ -1,7 +1,8 @@
 My Artificial Buddy
 ===================
-<p>A robot with conversational intelligence.</p>
-<p>By Osaze Shears</p>
+A robot with conversational intelligence.
+
+By Osaze Shears
 
 Project Goal
 ------------
