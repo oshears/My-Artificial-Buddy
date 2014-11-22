@@ -123,3 +123,5 @@
 01:19:53  ##--(System)Error: Did not understand response.--##
 01:20:00  good boy
 01:20:04  goodbye
+01:29:22  ##--(System)Error: Did not understand response.--##
+01:29:26  goodbye
