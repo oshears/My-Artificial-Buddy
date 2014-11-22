@@ -9,20 +9,20 @@ The goal of this project is to create a robot with the ability to talk fluently 
 
 Current Features
 ----------------
-*Voice Recognition Ability
-*Several Basic Commands
-  *"What time is it?"
-  *"Show face [Face]" ["greet face", "standard face", "inquisitive face", "aperature face"]
-  *"Say [Words]" [Any thing you want it to say]
-  *"What is your name?"
-  *"Clear!"
-  *"Respond silently."
-  *"Do not respond silently."
-  *"Stop listening!"
-  *"Open [Application" [Any application in the directory]
-  *"Aperature!"
-  *"Let's talk."
-  *"Impress my friends!"
+* Voice Recognition Ability
+* Several Basic Commands
+  * "What time is it?"
+  * "Show face [Face]" ["greet face", "standard face", "inquisitive face", "aperature face"]
+  * "Say [Words]" [Any thing you want it to say]
+  * "What is your name?"
+  * "Clear!"
+  * "Respond silently."
+  * "Do not respond silently."
+  * "Stop listening!"
+  * "Open [Application" [Any application in the directory]
+  * "Aperature!"
+  * "Let's talk."
+  * "Impress my friends!"
   
 
 Controls
