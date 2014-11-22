@@ -23,6 +23,7 @@ Current Features
   * "Aperature!"
   * "Let's talk."
   * "Impress my friends!"
+  * "What is the temperature?"
   
 
 Controls
