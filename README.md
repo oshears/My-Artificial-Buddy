@@ -24,6 +24,7 @@ Current Features
   * "Let's talk."
   * "Impress my friends!"
   * "What is the temperature?"
+  * "Run updated version"
   
 
 Controls
