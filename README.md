@@ -32,8 +32,8 @@ Simply execute the program by navigating to the "My Artificial Buddy" directory 
 
 Planned Additions
 -----------------
-*More user commands
-*Offline support for voice recognition
+* More user commands
+* Offline support for voice recognition
 
 Requirements
 ------------
