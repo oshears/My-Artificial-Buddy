@@ -22,7 +22,7 @@ def randomGreet():
 	return
 
 
-def collectInput():
+def collectInput(isSilent):
 	
 	r = sr.Recognizer()
 	with sr.Microphone() as source:
@@ -32,7 +32,7 @@ def collectInput():
 		userInput = r.recognize(audio)
 
 	except LookupError:
-		userInput = "Did not understand"
+		userInput = "##--(System)Error: Did not understand response.--##"
 
 	#userInput = ""
 	
@@ -42,7 +42,7 @@ def collectInput():
 
 	userInput=userInput.capitalize()
 		
-	return mabResponses.respondInput(userInput)
+	return mabResponses.respondInput(userInput,isSilent)
 		
 
 def main ():
@@ -51,6 +51,18 @@ def main ():
 	
 	living = True
 
-	while (living):
-		living=collectInput()
+	silentResponse = False
+
+	while (living!=False):
+
+		living=collectInput(silentResponse)
+
+		if (living=="silent"):
+			silentResponse=True
+			living=True
+
+		if (living=="not silent"):
+			silentResponse=False
+			living=True
+
 

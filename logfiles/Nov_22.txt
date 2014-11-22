@@ -96,3 +96,30 @@
 01:04:17  Did not understand
 01:04:23  Did not understand
 01:04:28  stop listening
+01:12:59  goodbye
+01:14:19  respond silently
+01:14:28  respond silently
+01:14:34  what time is it
+01:14:45  Did not understand
+01:14:48  goodbye
+01:15:00  respond silently
+01:15:10  this is the stupid test
+01:15:16  this is a very stupid test
+01:15:19  what time is it
+01:15:27  Did not understand
+01:15:32  let's talk
+01:15:46  do not respond silently
+01:15:52  Did not understand
+01:16:01  say I love soccer
+01:16:09  Did not understand
+01:16:17  Did not understand
+01:16:24  say iPhone
+01:16:37  say I love wearing glasses because glasses are cool
+01:16:47  goodbye
+01:18:47  go jump off a cliff
+01:18:53  go jump off a cliff
+01:19:00  say go jump off a cliff
+01:19:06  goodbye
+01:19:53  ##--(System)Error: Did not understand response.--##
+01:20:00  good boy
+01:20:04  goodbye

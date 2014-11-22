@@ -74,7 +74,7 @@ def getTime():
 	return
 
 
-def respondInput(userInput):
+def respondInput(userInput,areSilent):
 	if (userInput=="How is your day" or userInput=="How was your day" or userInput=="How are you"):
 		getMood()
 	elif (userInput=="Impress my friends"):
@@ -112,8 +112,13 @@ def respondInput(userInput):
 	elif (userInput=="Stop listening"):
 		dormant()
 	elif (userInput=="Respond silently"):
-		system("I will listen, but only respond if I know what you said")
+		system("say I will listen, but only respond if I know what you said")
+		return "silent"
+	elif (userInput=="Do not respond silently"):
+		system("say I will always respond to what you say")
+		return "not silent"
 	else:
-		system("say Come again?")
+		if not areSilent:
+			system("say Come again?")
 		
 	return True
