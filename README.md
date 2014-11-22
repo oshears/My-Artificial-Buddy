@@ -2,7 +2,7 @@ My Artificial Buddy
 ===================
 A robot with conversational intelligence.
 
-By Osaze Shears
+Designed and Programmed by Osaze Shears.
 
 Project Goal
 ------------
