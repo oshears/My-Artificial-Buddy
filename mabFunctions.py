@@ -1,17 +1,18 @@
 import mabResponses
 import mabFaces
+import mabUtilities
 from os import system
 from random import randrange
 import speech_recognition as sr
 
 def randomGreet():
 
-	print(mabFaces.greetFace)
+	print(mabUtilities.bcolors.GREEN + mabFaces.greetFace + mabUtilities.bcolors.NOCL)
 	system("say Good day o sa zee")
 
 	choice = randrange(1,4) 
 
-	print(mabFaces.standardFace)
+	print(mabUtilities.bcolors.BLUE + mabFaces.standardFace + mabUtilities.bcolors.NOCL)
 
 	if choice == 1:
 		system("say Is there anything I can help you with?")
@@ -23,8 +24,13 @@ def randomGreet():
 
 
 def collectInput(isSilent):
-	
+
 	r = sr.Recognizer()
+
+	r.energy_threshold = 3000
+
+	r.pause_threshold = 0.8
+
 	with sr.Microphone() as source:
 		audio = r.listen(source)
 
@@ -32,13 +38,13 @@ def collectInput(isSilent):
 		userInput = r.recognize(audio)
 
 	except LookupError:
-		userInput = "##--(System)Error: Did not understand response.--##"
+		userInput = "##--(system)error: did not understand response.--##"
 
 	#userInput = ""
 	
 	#userInput=str(input())
 
-	mabResponses.loginput(userInput)
+	mabUtilities.logInput(userInput)
 
 	userInput=userInput.capitalize()
 		
@@ -64,5 +70,3 @@ def main ():
 		if (living=="not silent"):
 			silentResponse=False
 			living=True
-
-
