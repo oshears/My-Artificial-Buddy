@@ -463,3 +463,27 @@
 12:02:36  run updated
 12:02:42  run updated version
 12:02:50  goodbye
+13:45:18  what is the
+13:45:53  test
+13:45:59  what is the temperature
+13:46:14  what is the temperature
+13:46:25  how are you
+13:46:32  aperature
+13:46:50  what
+13:46:56  what is the temperature
+13:47:21  what time is it
+13:48:05  run updated
+13:48:12  run updated
+13:48:26  run updated version
+13:48:38  what time is it
+13:48:46  what is the temperature
+13:48:57  se X
+13:49:04  say excuse me
+13:49:14  ##--(system)error: did not understand response.--##
+13:49:27  what
+13:49:40  what time is it
+13:49:50  what is the temperature
+13:50:13  what is
+13:50:20  what is the time
+13:50:30  say Oliver
+13:52:48  goodbye

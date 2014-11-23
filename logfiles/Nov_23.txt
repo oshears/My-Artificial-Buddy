@@ -1,0 +1,43 @@
+12:48:37  what time is it
+12:48:44  what's your name
+12:49:03  ##--(system)error: did not understand response.--##
+12:49:10  what is your name
+12:49:18  aperature
+12:49:26  say the cake is not
+12:49:32  ##--(system)error: did not understand response.--##
+12:49:59  ##--(system)error: did not understand response.--##
+12:50:07  save the cake is a
+12:50:13  say the
+12:50:21  say the cake is a lie
+12:50:28  say you are a
+12:50:35  ##--(system)error: did not understand response.--##
+12:50:43  what is the temperature
+12:52:15  goodbye
+13:10:28  ##--(system)error: did not understand response.--##
+13:10:37  ##--(system)error: did not understand response.--##
+13:10:52  respond
+13:10:59  respond silently
+13:13:19  ##--(system)error: did not understand response.--##
+13:14:21  ##--(system)error: did not understand response.--##
+13:14:44  hello my name is Samantha I am an American
+13:14:50  goodbye
+13:15:20  say hello
+13:15:27  hello TJ
+13:15:49  goodbye
+13:16:01  run updated
+13:16:07  run updated
+13:16:14  run updated
+13:16:21  run updated
+13:16:25  ##--(system)error: did not understand response.--##
+13:16:34  renovated Rouge
+13:16:51  run updated version
+13:17:09  goodbye
+13:17:29  run updated version
+13:17:38  run updated
+13:17:55  renovated version
+13:18:05  run updated version
+13:18:17  run updated version
+13:18:29  ##--(system)error: did not understand response.--##
+13:18:37  renovated version
+13:18:56  run updated version
+13:19:25  goodbye

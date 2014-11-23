@@ -29,7 +29,7 @@ def collectInput(isSilent):
 
 	r.energy_threshold = 3000
 
-	r.pause_threshold = 0.8
+	r.pause_threshold = 1.2
 
 	with sr.Microphone() as source:
 		audio = r.listen(source)
