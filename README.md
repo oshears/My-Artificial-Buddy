@@ -5,16 +5,16 @@ A robot with conversational intelligence.
 
 Designed and Programmed by Osaze Shears.
 ```
-000000000000000000               000                 000              111           55555555555555
-0000 00000000 0000               000               000               111           55555555555555
-00 000000000000 00               000             000                111           555
-0 000   00   000 0               000           000                 111           555
-00000   00   00000               000         000                  111           55555555555555
-000000000000000000               000       000                   111           55555555555555
-000000000000000000               000     000                    111                      555
-0000         00000               000   000                     111                      555
-000000     0000000               000 000        000           111   000     55555555555555
-000000000000000000               0000          000           111   000     55555555555555
+000000000000000000               000                 000              111           66666666666666
+0000 00000000 0000               000               000               111           66666666666666
+00 000000000000 00               000             000                111           666
+0 000   00   000 0               000           000                 111           666
+00000   00   00000               000         000                  111           66666666666666
+000000000000000000               000       000                   111           66666666666666
+000000000000000000               000     000                    111           66          66
+0000         00000               000   000                     111           66          66 
+000000     0000000               000 000        000           111   000     66666666666666
+000000000000000000               0000          000           111   000     66666666666666
 ```
 
 Project Goal
@@ -41,6 +41,8 @@ Current Features
   * "Impress my friends!"
   * "What is the temperature?"
   * "Run updated version."
+* Standard Responses
+  * Custom responses can now be added to the `standardResponses.txt` file
   
 
 Controls
@@ -74,3 +76,4 @@ Change Log
 ----------
 * Version 1.0 - Text Input with Standard Commands
 * Version 1.5 - Voice Input replaces Text Input
+* Version 1.6 - Standard Responses File Now Functional
