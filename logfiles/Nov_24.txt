@@ -145,3 +145,81 @@
 18:13:46  rebuild database
 18:14:01  reboot
 18:14:13  rebuild database
+18:16:39  hello
+18:16:57  show face aperature face
+18:17:01  aperature
+18:17:08  show face happy face
+18:17:13  show face inquisitive face
+18:17:23  show face question face
+18:23:07  rebuild response database
+18:23:12  rebuild responses
+18:24:21  rebuild database
+18:24:26  reboot
+18:24:38  rebuild response database
+18:24:46  what do you do for fun
+18:24:52  what do you do for fun
+18:24:58  what do you do for fun
+18:25:04  what do you do for fun
+18:25:11  what do you do for fun
+18:25:23  what do you do for fun
+18:25:33  what do you do for fun
+18:26:05  what do you do for fun
+18:26:17  what do you do for fun
+18:26:26  what do you do for fun
+18:26:43  what do you do for fun
+18:26:55  what do you do for fun
+18:27:03  what do you do for fun
+18:27:11  no internet
+18:29:10  reboot
+18:29:30  say O sa Ze
+18:29:37  say O sah
+18:29:42  say O sah zee
+18:29:48  say o sa zee
+18:29:56  reboot
+18:30:06  say o saH zeeee
+18:30:17  say o sAAH zee
+18:30:23  reboot
+18:30:51  what is your name
+18:30:58  what do you do for fun
+18:31:20  converse
+18:31:27  say What
+18:31:33  say WHAT??
+18:32:46  rebuild database
+18:32:51  I am tired
+18:32:55  I am tired
+18:32:57  I am tired
+18:33:01  I am tired
+18:33:08  I am tired
+18:33:51  rebuild database
+18:36:15  rebuild database
+18:36:20  that was funny
+18:36:26  that was funny
+18:36:33  that was funny
+18:36:45  that was funny
+18:36:49  that was funny
+18:36:58  that was funny
+18:37:02  that was funny
+18:37:06  that was funny
+18:37:10  that was funny
+18:37:13  that was funny
+18:37:20  rebuild database
+18:37:25  that was funny
+18:38:08  rebuild database
+18:38:11  to be or not to be
+18:38:57  rebuild database
+18:39:03  to be or not to be
+18:39:07  to be or not to be
+18:39:12  to be or not to be
+18:39:16  to be or not to be
+18:39:22  to be or not to be
+18:40:09  rebuild database
+18:40:37  rebuild database
+18:40:42  should i cut my hair
+18:40:50  should i cut my hair
+18:41:02  rebuild database
+18:41:06  should i cut my hair
+18:41:24  rebuild database
+18:41:28  should i cut my hair
+18:41:44  reboot
+18:42:01  should I cut my hair
+18:42:16  ##--(system)error: did not understand response.--##

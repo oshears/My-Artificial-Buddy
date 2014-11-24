@@ -94,13 +94,13 @@ def respondInput(self,userInput,areSilent):
 		except:
 			system("say I am unable to do this right now.")
 		return False
-	elif(userInput=="No internet"):
+	elif(userInput=="N01nt3rn31"):
 		system("say I am unable to connect to the internet right now...")
 	elif (userInput=="Open website"):
 		system("say Navigating to GitHub & open https://github.com/yoze15/My-Artificial-Buddy")
 	elif (userInput=="Open hub" or userInput=="GitHub"):
 		system("open ~/../../Applications/GitHub.app/")
-	elif (userInput=="Rebuild database" or userInput=="Update responses" or userInput=="Update database"):
+	elif (userInput=="Rebuild database" or userInput=="Update responses" or userInput=="Update database" or userInput=="Rebuild responses" or userInput=="Rebuild response database"):
 		self.rebuildDatabase()
 		system("say My response database has been rebuilt")
 	else:

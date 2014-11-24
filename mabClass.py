@@ -30,7 +30,7 @@ class MAB:
 	def randomGreet(self):
 
 		print(mabUtilities.colors.GREEN + mabFaces.happyFace + mabUtilities.colors.NOCOL)
-		system("say Good day o sa zee")
+		system("say Good day o saah zee")
 
 		choice = randrange(1,4) 
 
@@ -59,7 +59,7 @@ class MAB:
 			try:
 				userInput = r.recognize(audio)
 			except KeyError:
-				userInput = "No internet"
+				userInput = "N01nt3rn31"
 			except LookupError:
 				userInput = "##--(system)error: did not understand response.--##"
 
