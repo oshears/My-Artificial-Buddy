@@ -7,12 +7,12 @@ import speech_recognition as sr
 
 def randomGreet():
 
-	print(mabUtilities.bcolors.GREEN + mabFaces.greetFace + mabUtilities.bcolors.NOCL)
+	print(mabUtilities.colors.GREEN + mabFaces.happyFace + mabUtilities.colors.NOCOL)
 	system("say Good day o sa zee")
 
 	choice = randrange(1,4) 
 
-	print(mabUtilities.bcolors.BLUE + mabFaces.standardFace + mabUtilities.bcolors.NOCL)
+	print(mabUtilities.colors.BLUE + mabFaces.standardFace + mabUtilities.colors.NOCOL)
 
 	if choice == 1:
 		system("say Is there anything I can help you with?")
@@ -29,7 +29,7 @@ def collectInput(isSilent):
 
 	r.energy_threshold = 3000
 
-	r.pause_threshold = 1.2
+	r.pause_threshold = 1.5
 
 	with sr.Microphone() as source:
 		audio = r.listen(source)

@@ -71,16 +71,16 @@ def respondInput(userInput,areSilent):
 		except:
 			system("say ...")
 	elif(userInput[:9]=="Show face"):
-		print("\n"+mabUtilities.bcolors.PURPLE+mabFaces.getFace(userInput[10:]+mabUtilities.bcolors.NOCL))
+		print("\n"+mabUtilities.colors.MAGENTA+mabFaces.getFace(userInput[10:])+mabUtilities.colors.NOCOL)
 	elif(userInput[:4]=="Open"):
 		system("open%s & say opening"%(userInput[4:]))
 	elif (userInput=="Aperature"):
-		for line in mabFaces.aperatureFaceArray:
-			print(mabUtilities.bcolors.RED+line+mabUtilities.bcolors.NOCL)
+		for line in mabFaces.aperatureFace.split("\n"):
+			print(mabUtilities.colors.RED+line+mabUtilities.colors.NOCOL)
 		system("say The cake is a lie!")
 	elif (userInput=="Stop listening"):
 		dormant()
-	elif (userInput=="Respond silently"):
+	elif (userInput=="Respond silently" or userInput=="Shut up"):
 		system("say I will listen, but only respond if I know what you said")
 		return "silent"
 	elif (userInput=="Do not respond silently"):
@@ -89,9 +89,10 @@ def respondInput(userInput,areSilent):
 	elif (userInput=="##--(system)error: did not understand response.--##"):
 		if not areSilent:
 			system("say I am having a hard time understanding you")
-	elif (userInput=="Run updated version"):
+	elif (userInput=="Run updated version" or userInput=="Reboot"):
 		try:
 			system("osascript -e 'tell application \"Terminal\" to activate' -e 'tell application \"System Events\" to tell process \"Terminal\" to keystroke \"t\" using command down' -e 'tell application \"Terminal\" to do script \"mab.run\" in selected tab of the front window'")
+			system("say Rebooting")
 		except:
 			system("say I am unable to do this right now.")
 		return False

@@ -3,13 +3,15 @@ from random import randrange
 import speech_recognition as sr
 import time
 
-class bcolors:
-	PURPLE = '\033[95m'
-	BLUE = '\033[94m'
-	GREEN = '\033[92m'
-	YELLOW = '\033[93m'
-	RED = '\033[91m'
-	NOCL = '\033[0m'
+class colors:
+	MAGENTA = '\x1b[35m'
+	BLUE = '\x1b[34m'
+	CYAN = '\x1b[36m'
+	WHITE = '\x1b[37m'
+	GREEN = '\x1b[32m'
+	YELLOW = '\x1b[33m'
+	RED = '\x1b[31m'
+	NOCOL = '\x1b[0m \x1b[49m'
 
 def returnTime():
 	fatherTime = ""
