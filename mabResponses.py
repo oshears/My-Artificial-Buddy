@@ -1,5 +1,4 @@
 from os import system
-from random import randrange
 import mabFaces
 import mabConverse
 import mabUtilities
@@ -42,7 +41,7 @@ def getMood():
 
 	return
 
-def respondInput(userInput,areSilent):
+def respondInput(self,userInput,areSilent):
 	if (userInput=="How is your day" or userInput=="How was your day" or userInput=="How are you"):
 		getMood()
 	elif (userInput=="Impress my friends"):
@@ -89,17 +88,25 @@ def respondInput(userInput,areSilent):
 	elif (userInput=="##--(system)error: did not understand response.--##"):
 		if not areSilent:
 			system("say I am having a hard time understanding you")
-	elif (userInput=="Run updated version" or userInput=="Reboot"):
+	elif (userInput=="Run updated version" or userInput=="Reboot" or userInput=="Update"):
 		try:
 			system("osascript -e 'tell application \"Terminal\" to activate' -e 'tell application \"System Events\" to tell process \"Terminal\" to keystroke \"t\" using command down' -e 'tell application \"Terminal\" to do script \"mab.run\" in selected tab of the front window'")
-			system("say Rebooting")
 		except:
 			system("say I am unable to do this right now.")
 		return False
 	elif(userInput=="No internet"):
 		system("say I am unable to connect to the internet right now...")
+	elif (userInput=="Open website"):
+		system("say Navigating to GitHub & open https://github.com/yoze15/My-Artificial-Buddy")
+	elif (userInput=="Open hub" or userInput=="GitHub"):
+		system("open ~/../../Applications/GitHub.app/")
+	elif (userInput=="Rebuild database" or userInput=="Update responses" or userInput=="Update database"):
+		self.rebuildDatabase()
+		system("say My response database has been rebuilt")
 	else:
-		if not areSilent:
+		if userInput in self.responseDatabase.keys():
+			system("say %s"%(self.definedResponse(userInput)))
+		else:
 			system("say Ummm, come again?")
 
 	return True

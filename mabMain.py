@@ -1,4 +1,5 @@
-import mabFunctions
+from mabClass import MAB
 
 ##Run the program
-mabFunctions.main()
+MyArtificialBuddy=MAB()
+MyArtificialBuddy.main()
