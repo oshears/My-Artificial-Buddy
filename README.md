@@ -1,5 +1,6 @@
 My Artificial Buddy
 ===================
+Version 1.5
 A robot with conversational intelligence.
 
 Designed and Programmed by Osaze Shears.
@@ -68,3 +69,8 @@ Recommended Configuration
 -------------------------
 * Add the alias `mab.run` to your `.bash_profile` which executes `python3 mabMain.py`
  * This allows the "Run updated version" command to execute properly
+
+Change Log
+----------
+* Version 1.0 - Text Input with Standard Commands
+* Version 1.5 - Voice Input replaces Text Input
