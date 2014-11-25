@@ -1,0 +1,12 @@
+09:35:28  say Quit
+09:35:30  quit
+23:01:01  show face aperatureface
+23:01:27  quit
+23:01:44  show face aperatureface
+23:02:53  show face aperatureface
+23:07:11  quit()
+23:07:14  quit
+23:08:50  aperature
+23:08:54  aperature
+23:08:58  aperature
+23:14:35  quit

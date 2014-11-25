@@ -1,0 +1,99 @@
+13:00:00  goodbye
+13:00:12  goohow are you
+13:00:17  what time is it
+13:00:36  help
+13:00:53  what is the date
+13:03:19  Lets talk
+13:03:41  what is the weather
+13:03:55  what is my current location
+13:47:58  "does this work"
+13:50:09  "no sir it does not"
+13:51:06  Lets talk
+13:54:15  quit
+13:58:58  clear
+14:00:49  quit
+14:03:12  clear
+14:03:15  testing
+14:03:18  display face
+14:03:23  say test
+14:03:33  what time is it
+14:03:48  quit
+14:14:10  what time is it
+14:14:13  what time is it?
+14:14:22  how are you
+14:14:28  how is your day
+14:14:33  how is your day?
+14:16:02  how are you
+14:16:10  how are you?
+14:16:15  how was your day
+14:16:20  how was your day?
+14:16:25  how is your day?
+14:16:41  goodbye
+14:17:14  say I am stupid
+14:17:24  sya
+14:17:26  say 
+14:17:45  quit
+14:18:23  say I like pie
+14:18:34  quit()
+14:18:36  quit
+14:18:46  say i like pie
+14:19:05  quit
+14:19:15  say I can see the world from here
+14:19:23  say I can show your the world
+14:19:36  say I can show you the world. A shining simmering moon light
+14:19:58  say I can show you the world. A shininggggg simmmmeering moooooon light!
+14:20:07  say o sa zeh
+14:20:12  say o sa zeh
+14:20:19  say o SA zeh
+14:20:28  say OsaZeh
+14:20:38  say osayze
+14:20:43  say osazy
+14:20:48  say asazi
+14:20:55  say ansari
+14:20:59  say maryam
+14:21:03  say more yam
+14:21:06  say mariam
+14:21:13  quit
+16:24:55  show face standardFace
+16:25:31  show face
+16:25:45  show face greetFace
+16:25:58  quit
+16:26:09  show face greetface
+16:26:14  show face greetFace
+16:26:48  quit()
+16:26:51  quit
+16:27:15  Show face greetFace
+16:27:29  quit
+16:27:36  show face greetFace
+16:27:57  show face inquisitiveFace
+16:28:13  show face inquisitiveFace
+16:28:35  show face greetFace
+16:28:42  quit
+16:28:57  show face greetFace
+16:29:26  quit
+16:29:36  show show face greetface
+16:29:43  show face greetFace
+16:29:54  show face greetFace
+16:30:05  show face inquisitiveface
+16:30:16  show face standardface
+16:30:58  quit
+16:33:09  open .
+16:33:21  open ./
+16:33:30  quit
+16:33:36  open .
+16:34:23  quit
+16:34:29  open .
+16:34:39  quit
+16:34:50  open .
+16:35:18  quit
+16:35:26  open ./logfiles
+16:35:34  open ./logfiles
+16:38:11  open .
+17:09:18  quit
+18:45:03  yes
+18:45:27  okay
+18:45:31  what time is it
+18:45:37  where am i located
+18:45:40  what is my location
+18:45:46  where is my location
+18:46:11  goodbye
