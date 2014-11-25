@@ -1,0 +1,4 @@
+08:30:56  what is the temperature
+16:41:24  what time is it
+16:41:32  reboot
+16:41:41  goodbye
