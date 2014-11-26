@@ -1,6 +1,7 @@
 from Foundation import *
 import AppKit
 import sys
+import os
 import mabClass
 import mabResponses
 
@@ -8,12 +9,14 @@ class SRDelegate(NSObject):
 
 	myBuddy=mabClass.MAB()
 
-	def speechRecognizer_didRecognizeCommand_(self,sender,cmd):
-		print ("speechRecognizer_didRecognizeCommand_", cmd)
+	def speechRecognizer_didRecognizeCommand_(self,sender,userInput):
+		print ("speechRecognizer_didRecognizeCommand_", userInput)
 
-		if (cmd == "Quit the test."):
+		if (userInput == "Quit the test."):
+			os.system("say quiting the test...")
 			sys.exit()
-		mabResponses.respondInput(self.myBuddy,cmd,False)
+
+		mabResponses.respondInput(self.myBuddy,userInput,False)
 
 
 
@@ -25,8 +28,7 @@ recog.setCommands_( [
 		"What is your quest?",
 		"What is the capital of Assyria?",
 		"Quit the test.",
-		"I LOVE YOU!",
-		"How is your day"
+		"How is your day",
 		"How was your day",
 		"How are you",
 		"Impress my friends",

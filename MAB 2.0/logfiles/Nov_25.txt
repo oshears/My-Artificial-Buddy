@@ -1,7 +1,0 @@
-08:30:56  what is the temperature
-16:41:24  what time is it
-16:41:32  reboot
-16:41:41  goodbye
-17:00:57  goodbye
-17:03:58  goodbye
-17:03:58  goodbye

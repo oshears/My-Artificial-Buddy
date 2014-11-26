@@ -3,14 +3,25 @@ import speech_recognition as sr
 import time
 
 class colors:
-	MAGENTA = '\x1b[35m'
-	BLUE = '\x1b[34m'
-	CYAN = '\x1b[36m'
-	WHITE = '\x1b[37m'
+	BLACK='\x1b[30m'
+	RED = '\x1b[31m'
 	GREEN = '\x1b[32m'
 	YELLOW = '\x1b[33m'
-	RED = '\x1b[31m'
-	NOCOL = '\x1b[0m \x1b[49m'
+	BLUE = '\x1b[34m'
+	MAGENTA = '\x1b[35m'
+	CYAN = '\x1b[36m'
+	WHITE = '\x1b[37m'
+
+	BLACKBG='\x1b[40m'
+	REDBG = '\x1b[41m'
+	GREENBG = '\x1b[42m'
+	YELLOWBG = '\x1b[43m'
+	BLUEBG = '\x1b[44m'
+	MAGENTABG = '\x1b[45m'
+	CYANBG = '\x1b[46m'
+	WHITEBG = '\x1b[47m'		
+	
+	NOCOL = '\x1b[0m'
 
 def returnTime():
 	fatherTime = ""
