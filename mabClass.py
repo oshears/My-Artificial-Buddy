@@ -17,6 +17,7 @@ class MAB:
 			self.inputType = fileLines[1][:len(fileLines[1])]
 		except:
 			self.inputType = "Text"
+		print("Input type is %s"%(self.inputType))
 
 	def rebuildDatabase(self):
 		self.responseDatabase=mabUtilities.buildDictionary()
@@ -46,7 +47,7 @@ class MAB:
 
 
 	def collectInput(self,isSilent):
-		if (self.inputType=="vocalinput"):
+		if (self.inputType=="VocalInput"):
 			r = sr.Recognizer()
 
 			r.energy_threshold = 3000

@@ -1,0 +1,22 @@
+11:04:47  what time is it
+11:06:45  what time is it
+11:06:49  goodbye
+11:07:23  goodby
+11:07:27  goodbye
+11:07:53  how are you
+11:08:01  what is the
+11:08:07  what is the time
+11:08:14  run updated
+11:11:25  run updated version
+11:11:44  how are you
+11:11:57  ##--(system)error: did not understand response.--##
+11:12:05  say good morning
+11:12:13  say hello
+11:12:20  what is your favorite color
+11:12:30  ##--(system)error: did not understand response.--##
+11:12:38  can you speak binary
+11:12:52  what is the best computer
+11:13:16  should I cut my hair
+11:14:01  that was
+11:14:29  converse
+11:14:40  goodbye
